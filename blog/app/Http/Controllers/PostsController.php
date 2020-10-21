@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\storePostsRequest;
+use App\Http\Requests\updatePostsRequest;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -40,28 +42,42 @@ class PostsController extends Controller
 
 
 
-    public function save(Request $request){  //requestit wvdoma gvaq create pormaze
+    public function save(storePostsRequest $request){  //requestit wvdoma gvaq create pormaze //da requestis magivrad unda cahvwerot storePostsRequest anu sadac gadagvaq
+
+        request()->validate([            //arapers ro ar chavwert da save davachert erroris magivrad gvabrunebs sawyisze anu redirect
+           // 'title'=> 'required|min:5|unique:posts', //unique:posts anu The title has already been taken.
+            //'body'=>  'required',                    //aseve es shegvidzlia davakopirot da gadavitanot storePostsRequest-shi rulebshi
+           // 'likes'=> 'required'
+        ]);
         $post = new Post($request->all());
+
         $post ->save();
+
         return redirect()->back();
 
     }
 
     public function edit($postid){
+
         $post=Post::findOrFail($postid);
         return view('edit')->with('post',$post);
+
     }
 
-    public function update(Request $request, $postid){
+    public function update(updatePostsRequest $request, $postid){
+
         $post=Post::findOrFail($postid);
         $post->update($request->all());
         return redirect()->back();
+
     }
 
     public function delete($id){
+
         $post=Post::findOrFail($id);
         $post->delete();
         return redirect()->back();
+
     }
 
 

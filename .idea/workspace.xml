@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66f1ed9d-64ff-4eb9-817b-f9be77d3a5c2" name="Default Changelist" comment="hi">
-      <change beforePath="$PROJECT_DIR$/.idea/blogPhp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blogPhp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +9,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/blog/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -139,6 +138,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -151,6 +151,9 @@
       <updated>1602599691270</updated>
       <workItem from="1602599692427" duration="301000" />
       <workItem from="1602600065785" duration="411000" />
+      <workItem from="1603277335793" duration="36000" />
+      <workItem from="1603277373656" duration="38000" />
+      <workItem from="1603277413555" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1602599819964</created>
@@ -170,10 +173,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="hi" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2" timestamp="1602600083451">
+    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2" timestamp="1603277408488">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1602600083451" />
+    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603277408488" />
+    <state x="236" y="120" width="1488" height="879" key="DiffContextDialog" timestamp="1603277402751">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="236" y="120" width="1488" height="879" key="DiffContextDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1603277402751" />
+    <state x="479" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1603277385867">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="479" y="188" width="1022" height="737" key="SettingsEditor/60.27.1860.1053@60.27.1860.1053" timestamp="1603277385867" />
     <state x="613" y="250" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602599857115">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
