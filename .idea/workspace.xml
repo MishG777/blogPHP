@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66f1ed9d-64ff-4eb9-817b-f9be77d3a5c2" name="Default Changelist" comment="hi">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="66f1ed9d-64ff-4eb9-817b-f9be77d3a5c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/database/migrations/2020_10_08_090153_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/database/migrations/2020_10_08_090153_create_posts_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,11 +138,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -166,6 +175,7 @@
       <workItem from="1603786304096" duration="114000" />
       <workItem from="1603786439358" duration="408000" />
       <workItem from="1603790427838" duration="703000" />
+      <workItem from="1603877389394" duration="3275000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1602599819964</created>
@@ -181,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603277685862</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hi">
+      <created>1603877452110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603877452110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,10 +213,10 @@
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state x="326" y="86" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1603786549863" />
-    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2" timestamp="1603786026249">
+    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2" timestamp="1603877451969">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603786026249" />
+    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1603877451969" />
     <state x="236" y="120" width="1488" height="879" key="DiffContextDialog" timestamp="1603277402751">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>

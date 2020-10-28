@@ -20,7 +20,9 @@ class Post extends Model
         return Post::all(); // -> PostControllershi
     }
 
-
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 
 
 }
