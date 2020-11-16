@@ -25,7 +25,7 @@ Route::get('/about', function () {
 */
 
 //Route::get('/about_us',[AboutUsController::class,'index1']);
-Route::get('/posts',[PostsController::class,'index']);
+Route::get('/posts',[PostsController::class,'index'])->middleware(\App\Http\Middleware\TestMiddleware::class);
 
 Route::get('/posts/create',[PostsController::class,'create'])->name('post.create');
 
