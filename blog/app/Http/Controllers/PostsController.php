@@ -79,6 +79,10 @@ class PostsController extends Controller
         return redirect()->back();
 
     }
+    public function Uinfo(){
+        $my_posts=Post::all();
+        return view('user.my_posts')->with('my_posts',$my_posts);
+    }
 
 
 
