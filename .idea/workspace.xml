@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66f1ed9d-64ff-4eb9-817b-f9be77d3a5c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/public/CSS/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/resources/views/user/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/resources/views/user/my_posts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/resources/views/user/registration.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/database/migrations/2020_10_08_090153_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/database/migrations/2020_10_08_090153_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/posts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/user/my_posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/user/my_posts.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +191,7 @@
       <workItem from="1605945923132" duration="44000" />
       <workItem from="1605945971436" duration="264000" />
       <workItem from="1605946246472" duration="4639000" />
+      <workItem from="1605982518521" duration="1268000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1602599819964</created>

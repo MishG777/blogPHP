@@ -6,6 +6,7 @@ use App\Http\Requests\storePostsRequest;
 use App\Http\Requests\updatePostsRequest;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class PostsController extends Controller
@@ -80,9 +81,12 @@ class PostsController extends Controller
 
     }
     public function Uinfo(){
-        $my_posts=Post::all();
-        return view('user.my_posts')->with('my_posts',$my_posts);
+        $user=Auth::user();
+        $user->posts;
+        return view('user.my_posts')->with('my_info',$user);
     }
+
+
 
 
 

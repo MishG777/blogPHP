@@ -1,5 +1,6 @@
 @extends('layout.layout')
 @section('content')
+    <link href="/CSS/style.css" rel="stylesheet">
     <div class="bg-gray-800  text-white">
         @if (Route::has('Login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -23,15 +24,17 @@
         @endif
     </div>
     <div>
-        @foreach($my_posts as $post)
+        <div class="bg-none text-white mx-10">
             <div>
-                <div class="bg-none text-white mx-10">post
-                    <div>
-                        <a>სახელი: {{$post->user->name}}</a>
-                    </div>
-                    <a>იმეილი: {{$post->user->email}}</a>
-                </div>
+                <a>სახელი: {{$my_info->name}}</a>
+                <a>იმეილი: {{$my_info->email}}</a>
             </div>
-        @endforeach
+            @foreach($my_info->posts as $post)
+                <div class="mt-10">
+                    <a>პოსტის სახელი: {{$post->title}}</a>
+                    <a>პოსტის ტექსტი: {{$post->text}}</a>
+                </div>
+            @endforeach
+        </div>
     </div>
 @endsection
