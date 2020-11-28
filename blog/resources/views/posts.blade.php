@@ -61,6 +61,13 @@
                     <div>
                         <a>{{$post->user->name}}</a>
                     </div>
+                    <div >
+                        @foreach($post->tags as $tag)
+                            <div>
+                                {{$tag->name}}
+                            </div>
+                        @endforeach
+                    </div>
                 @endforeach
 
 

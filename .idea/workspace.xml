@@ -4,7 +4,10 @@
     <list default="true" id="66f1ed9d-64ff-4eb9-817b-f9be77d3a5c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Http/Controllers/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/resources/views/user/my_posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/user/my_posts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/resources/views/posts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/resources/views/posts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +194,10 @@
       <workItem from="1605945923132" duration="44000" />
       <workItem from="1605945971436" duration="264000" />
       <workItem from="1605946246472" duration="4639000" />
-      <workItem from="1605982518521" duration="1268000" />
+      <workItem from="1605982518521" duration="1315000" />
+      <workItem from="1606494435500" duration="148000" />
+      <workItem from="1606549536252" duration="217000" />
+      <workItem from="1606549758203" duration="3621000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1602599819964</created>
@@ -235,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605551961749</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="dav">
+      <created>1605983795808</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605983795808</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,17 +257,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hi" />
     <MESSAGE value="hii" />
-    <option name="LAST_COMMIT_MESSAGE" value="hii" />
+    <MESSAGE value="dav" />
+    <option name="LAST_COMMIT_MESSAGE" value="dav" />
   </component>
   <component name="WindowStateProjectService">
     <state x="326" y="86" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603786549863">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state x="326" y="86" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/60.27.1860.1053@60.27.1860.1053" timestamp="1603786549863" />
-    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2" timestamp="1605551961564">
+    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2" timestamp="1605983795634">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1605551961564" />
+    <state x="457" y="110" width="1055" height="893" key="CommitChangelistDialog2/60.27.1860.1053@60.27.1860.1053" timestamp="1605983795634" />
     <state x="236" y="120" width="1488" height="879" key="DiffContextDialog" timestamp="1603277402751">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
@@ -263,10 +277,10 @@
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state x="479" y="188" width="1022" height="737" key="SettingsEditor/60.27.1860.1053@60.27.1860.1053" timestamp="1603277385867" />
-    <state x="613" y="250" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605551976910">
+    <state x="613" y="250" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605983799579">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>
-    <state x="613" y="250" width="800" height="535" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1605551976910" />
+    <state x="613" y="250" width="800" height="535" key="Vcs.Push.Dialog.v2/60.27.1860.1053@60.27.1860.1053" timestamp="1605983799579" />
     <state x="604" y="214" width="832" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605950367979">
       <screen x="60" y="27" width="1860" height="1053" />
     </state>

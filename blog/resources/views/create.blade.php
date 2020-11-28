@@ -23,17 +23,18 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Post body</label>
-                    <input type="Name" class="form-control @error('body') is-invalid @enderror" placeholder="Name" name="body" >
+                    <input type="Name" class="form-control @error('body') is-invalid @enderror" placeholder="Name" name="text" >
                     @error('body')
                     <p class="text-danger">{{$errors->first('body')}} </p>
                     @enderror
                 </div>
-                 <div class="form-group">
-                    <label for="exampleInputEmail1">likes</label>
-                    <input type="Name" class="form-control @error('likes') is-invalid @enderror" placeholder="Name" name="likes">
-                     @error('likes')
-                     <p class="text-danger">{{$errors->first('likes')}} </p>
-                     @enderror
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Post Tags</label>
+                    <select name="tags[]" id="" multiple>
+                        @foreach($tags as $tag)
+                            <option value="{{$tag->id}}">{{$tag->name}}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <input type="hidden" name="_token" id="csrf_token" value="{{csrf_token()}}">

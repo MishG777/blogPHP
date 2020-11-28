@@ -32,7 +32,7 @@ Route::middleware('auth')->group(function (){
     Route::get('/posts',[\App\Http\Controllers\PostsController::class, 'index'])->name('posts.show');
     Route::get('posts/create', [\App\Http\Controllers\PostsController::class, 'create'])->name('post.create');
     Route::get('/posts/{id}', [\App\Http\Controllers\PostsController::class, 'show'])->name('post.show');
-    Route::post('posts/savepost', [\App\Http\Controllers\PostsController::class, 'save'])->name('post.save');
+    Route::post('posts/savepost', [\App\Http\Controllers\PostsController::class, 'save'])->name('posts.save');
     Route::get('posts/{id}/edit', [\App\Http\Controllers\PostsController::class, 'edit'])->name('post.edit');
     Route::put('posts/{id}/update', [\App\Http\Controllers\PostsController::class, 'update'])->name('post.update');
     Route::delete('posts/{id}/delete', [\App\Http\Controllers\PostsController::class, 'delete'])->name('post.delete');

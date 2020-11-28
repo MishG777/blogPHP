@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\storePostsRequest;
 use App\Http\Requests\updatePostsRequest;
 use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -38,21 +39,24 @@ class PostsController extends Controller
 
 
     public function create(){
-        return view('create');
+        $tags = Tag::all();
+        return view('create', compact('tags'));
     }
 
 
 
-    public function save(storePostsRequest $request){  //requestit wvdoma gvaq create pormaze //da requestis magivrad unda cahvwerot storePostsRequest anu sadac gadagvaq
+    public function save(Request $request){  //requestit wvdoma gvaq create pormaze //da requestis magivrad unda cahvwerot storePostsRequest anu sadac gadagvaq
 
         request()->validate([            //arapers ro ar chavwert da save davachert erroris magivrad gvabrunebs sawyisze anu redirect
-           // 'title'=> 'required|min:5|unique:posts', //unique:posts anu The title has already been taken.
-            //'body'=>  'required',                    //aseve es shegvidzlia davakopirot da gadavitanot storePostsRequest-shi rulebshi
-           // 'likes'=> 'required'
+            'title'=> 'required|min:5|unique:posts', //unique:posts anu The title has already been taken.
+            'likes'=> 'required'
         ]);
         $post = new Post($request->all());
+        $post->user_id=1;
 
         $post ->save();
+
+        $post->tags()->attach($request->tags);
 
         return redirect()->back();
 
