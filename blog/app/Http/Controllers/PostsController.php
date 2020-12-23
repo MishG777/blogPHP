@@ -1,14 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Requests\storePostsRequest;
 use App\Http\Requests\updatePostsRequest;
 use App\Models\Post;
 use App\Models\Tag;
+use App\Models\User;
+use App\Notifications\PostApprovedNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class PostsController extends Controller
 {
@@ -91,6 +90,27 @@ class PostsController extends Controller
     }
 
 
+    public function approve(Post $post){
+//        $post->is_approves=true;
+//        $post->save();
+//        return redirect()->route('posts.show');
+
+        if ($post->is_approves==false){
+            $post->is_approves=true;
+            $data=[
+                "text"=>'post with id of'.'  '.$post->id.'  '.'has been approved'
+            ];
+
+        }else{
+            $post->is_approves=false;
+            $data=[
+                "text"=>'post with id of'.'  '.$post->id.'  '.'has been dis_approved'
+            ];
+        }
+        $post->save();
+        $user=User::find(7);
+        $user->notify(new PostApprovedNotification($data));
+    }
 
 
 

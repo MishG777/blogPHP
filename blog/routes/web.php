@@ -38,6 +38,9 @@ Route::middleware('auth')->group(function (){
     Route::delete('posts/{id}/delete', [\App\Http\Controllers\PostsController::class, 'delete'])->name('post.delete');
     Route::get('/logout', [\App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
     Route::get('/Uinfo', [\App\Http\Controllers\PostsController::class, 'Uinfo'])->name('Uinfo');
+    Route::post('/posts/{post}/approve', [PostsController::class, 'approve'])->name('approve');
+    Route::get('/mail/create', [\App\Http\Controllers\MailController::class, 'create_mail'])->name('create_mail');
+    Route::post('/mail/send', [\App\Http\Controllers\MailController::class, 'send'])->name('send');
 });
 
 

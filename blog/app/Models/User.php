@@ -48,4 +48,8 @@ class User extends Authenticatable
 //    public function author(){
 //        return $this->hasMany(Post::class,'user_id');
 //    }
+
+    public function isAdmin(){
+        return $this->is_admin;
+    }
 }
